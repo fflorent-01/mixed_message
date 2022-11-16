@@ -2,7 +2,7 @@
     "animal": [
         ["Cats are angels with fur.", "Sark"],
         ["Until one has loved an animal, a part of one’s soul remains unawakened.", "Anatole France"],
-        ["Animals are such agreeable friends—they ask no questions; they pass no criticisms.", George Eliot""],
+        ["Animals are such agreeable friends—they ask no questions; they pass no criticisms.", "George Eliot"],
         ["An animal’s eyes have the power to speak a great language.", "Martin Buber"],
         ["The better I get to know men, the more I find myself loving dogs.", "Charles de Gaulle"],
         ["Dogs are our link to paradise. They don’t know evil or jealousy or discontent.", "Milan Kundera"],
@@ -12,5 +12,34 @@
         ["A dog is the only thing on earth that loves you more than you love yourself.", "Josh Billings"],
         ["I have studied many philosophers and many cats. The wisdom of cats is infinitely superior.", "Hippolyte Taine"],
         ["Animals are my friends … and I don’t eat my friends.", "George Bernard Shaw"]
-    ]
+    ],
+    "feel_good": [
+		["Yesterday is history, tomorrow is a mystery, but today is a gift; that’s why it’s called The Present.", "Bil Keane"],
+		["Put your thoughts to sleep. Do not let them cast a shadow over the moon of your heart. Let go of thinking.", "Rumi"],
+		["Take a deep breath. Inhale peace, exhale happiness.", "A.D. Posey"],
+		["Life is the dancer and you are the dance.", "Eckhart Tolle"],
+		["Be thankful for what you have and you will end up having more.", "Oprah"],
+		["The most beautiful things in the world cannot be seen or touched, they are felt with the heart.", "The Little Prince"],
+		["Sometimes, there is no harm in putting off a piece of work until another day.", "The Little Prince"],
+		["Beauty is everywhere. You only have to look to see it.", "Bob Ross"],
+		["The world is full of magical things, patiently waiting for our senses to grow sharper.", "W.B. Yeats"],
+		["There’s as many atoms in a single molecule of your DNA as there are stars in the typical galaxy. We are, each of us, a little universe.", "Neil deGrasse Tyson"],
+		["You can’t focus on what’s going wrong, there’s always a way to turn things around.", "Joy (Inside Out)"],
+		["Sing like the birds sing, not worrying about who hears or what they think.", "Rumi"],
+		["Life is a sea of vibrant color. Jump in.", "A.D. Posey"],
+		["See what no one else sees. See what everyone chooses not to see – out of fear, conformity or laziness. See the whole world anew each day!", "Patch Adams"],
+		["Wherever you are, you are one with the clouds and one with the sun and the stars you see. You are one with everything.", "Shunryu Suzuki"],
+		["Do not let anyone define your limits because of where you come from. Your only limit is your soul.", "Gusteau (Ratatouille)"],
+		["Shine like the whole universe is yours.", "Rumi"],
+		["Tension is who you think you are, relaxation is who you are.", "Lao Tzu"],
+		["Nature does not hurry, yet everything gets accomplished.", "Lao Tzu"],
+		["Life is a fairy tale. Live it with wonder and amazement.", "Welwyn Wilton Katz"],
+		["You don’t need fancy things to feel good. You can hug a puppy. You can buy a can of paint and surround yourself with color. You can plant a flower and watch it grow. You can decide to start over and let other people start over too.", "Joan Bauer"],
+		["When we feel good about the choices we’re making and when we’re engaging with the world from a place of worthiness rather than scarcity, we feel no need to judge and attack.", "Brené Brown"],
+		["If we feel good, we can keep going in the direction of the reality we’re creating. If we don’t feel good, we may reflect upon our beliefs and change them according to the reality we do wish to create.", "Alaric Hutchinson"],
+		["At the center of the Universe is a loving heart that continues to beat and that wants the best for every person.", "Fred Rogers"],
+		["You are a very special person. There is only one like you in the whole world. There’s never been anyone exactly like you before, and there will never be again. Only you. And people can like you exactly as you are.", "Fred Rogers"],
+		["You aren’t just the age you are. You are all the ages you ever have been!", "Kenneth Koch"],
+		["The nitrogen in our DNA, the calcium in our teeth, the iron in our blood, the carbon in our apple pies were made in the interiors of collapsing stars. We are made of star stuff.", "Carl Sagan, Cosmos"]
+	]
 }
