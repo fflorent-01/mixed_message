@@ -1,38 +1,44 @@
-let quoteData
+// This would probably be better to do this process in the backend. I wanted to explore how I would do it on the client-side.
 
+// This should probably have stayed private.
+let quoteData
 fetch("../data/data.json")
     .then(res => res.json())
     .then(data => {
         quoteData = data
     })
 
+// Not sure if best option, but need a way to keep "permanency" of choice. I guess ideally some kind of local storage + associated date
 const selectedQuote = {}
 
-const selectQuote = (event) => {
+
+// Randomly select a quote in a given category and store it.
+const selectQuote = (category, quoteObj, selectedQuoteObj) => {
+    
+    if ( !(category in selectedQuoteObj) ) {
+        selectedQuoteObj[category] = quoteObj[category][Math.floor(Math.random() * quoteObj[category].length)]
+    } 
+
+    return selectedQuoteObj[category]
+}
+
+const onCategoryClick = (event) => {
+
+    // Get the quote info
     const category = event.target.id
-    const quotesInCategory = quoteData[category]
+    const [citation, author] = selectQuote(category, quoteData, selectedQuote)
 
-    // Quote Selection
-    if ( !(category in selectedQuote) ) {
-        selectedQuote[category] = quotesInCategory[Math.floor(Math.random() * quotesInCategory.length)]
-    }
-    
-    // Set the quote to <blockquote>
-    
-    const [citation, author] = selectedQuote[category]
-    console.log(citation, author)
     const figure = document.getElementById("today_quote")
-    const blockquote = figure.querySelector("blockquote")
-    const figcaption = figure.querySelector("figcaption")
+    figure.style.display = "block"   
 
+    const blockquote = figure.querySelector("blockquote")
     blockquote.innerHTML = citation
+
+    const figcaption = figure.querySelector("figcaption")
     figcaption.innerHTML = "- " + author
 
-    figure.style.display = "block"
-
     // Toggle background-color of selected li item
-    const liList = event.target.parentNode.getElementsByTagName('li')
-    Object.values(liList).forEach(elem => {
+    Object.values(event.target.parentNode.getElementsByTagName('li')).forEach(elem => {
         if (elem === event.target) {
             elem.style.backgroundColor = "lightgreen"
         } else {
@@ -42,5 +48,5 @@ const selectQuote = (event) => {
  
 }
 
-document.getElementById("animal").addEventListener("click", selectQuote)
-document.getElementById("feel_good").addEventListener("click", selectQuote)
+document.getElementById("animal").addEventListener("click", onCategoryClick)
+document.getElementById("feel_good").addEventListener("click", onCategoryClick)
